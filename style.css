@@ -1,0 +1,204 @@
+.btn-over-image{
+  position: absolute; 
+  top: 80%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+/* Estilo do preloader */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff; /* Cor de fundo do loader */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Garante que o loader esteja acima de todos os elementos */
+}
+
+/* Estilo do spinner (círculo de carregamento) */
+.spinner {
+  width: 80px;
+  height: 80px;
+  border: 8px solid rgba(255, 124, 41, 0.2); /* Cor laranja suave */
+  border-top: 8px solid #ff7c29; /* Cor laranja principal */
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite;
+}
+
+/* Animação de rotação */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Menu Superior */
+.navbar-brand {
+    color: white;
+}
+
+.navbar-brand:hover{
+    color:black;
+}
+
+.navbar-nav .nav-link {
+    color: white; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: black; 
+}
+
+
+@media (max-width: 768px) {
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h22M4 12h22M4 18h22'/%3E%3C/svg%3E");
+    
+  }
+
+  .navbar-toggler {
+    background-color: transparent;
+    border-color: white; 
+  }
+
+  .navbar-toggler:hover,
+  .navbar-toggler:focus {
+    background-color: #f5b70b;
+  }
+}
+
+
+/* Body */
+body {
+    background: #F9F9F9;
+    min-height: 100vh;
+}
+
+.img-lateral {
+    max-width: 100%; 
+    height: auto; 
+    width: 100%; 
+}
+
+/* Card Beneficios */
+.card {
+    border: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); 
+  }
+  
+  .card h4 {
+    color: #ff7e29; 
+  }
+  
+  .card ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }  
+
+  /* Nossa Equipe */
+/* Estilização dos cards */
+.card {
+  border: none;
+  transition: transform 0.3s ease;
+  background-color: #ffffff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Imagens circulares */
+.card-img-top {
+  object-fit: cover;
+  border: 5px solid #ff7e29;
+}
+
+/* Títulos e textos dos cards */
+.card-title {
+  color: #ff7e29; 
+  font-weight: bold;
+}
+
+.card-text {
+  color: #555555; 
+}
+
+.team-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover; 
+}
+
+/* Contatos */
+  
+#contato .form-control {
+background-color: rgba(255, 255, 255, 0.9);
+}
+  
+#contato p {
+font-size: 1.1rem;
+}
+  
+#contato i {
+transition: transform 0.3s;
+}
+  
+#contato i:hover {
+transform: scale(1.2);
+}  
+
+/* Estilos adicionais para o formulário */
+.form-control.is-invalid {
+  border-color: #dc3545; /* Borda vermelha para campos inválidos */
+}
+
+.invalid-feedback {
+  display: none; /* Mensagem de erro inicialmente oculta */
+  color: #dc3545; /* Cor da mensagem de erro */
+  font-size: 0.875rem; /* Tamanho da fonte para a mensagem */
+  margin-top: 0.25rem;
+  /* Removemos a posição absoluta para que o erro fique no fluxo do layout */
+}
+
+/* Quando o campo é inválido, a mensagem de erro aparece abaixo do campo */
+.form-group {
+  position: relative; /* Para garantir que o erro não saia do grupo de campos */
+}
+
+/* Certificando-se de que o campo de entrada tenha a borda vermelha */
+.form-group input.is-invalid, 
+.form-group textarea.is-invalid {
+  border-color: #dc3545;
+}
+
+/* Ajuste para garantir que o erro não se sobreponha ao botão */
+.form-group {
+  margin-bottom: 1.5rem; /* Espaço suficiente para o erro e evitar sobreposição */
+}
+
+/* Estilo para o botão de enviar e o botão de limpar */
+.d-flex {
+  margin-top: 1.5rem; /* Espaçamento entre os campos do formulário e os botões */
+}
+
+/* Ajuste para o formulário em dispositivos menores (mobile-first) */
+@media (max-width: 767.98px) {
+  .invalid-feedback {
+    margin-top: 0.5rem;
+  }
+}
+
+:focus {
+  outline: 3px solid #f5b70b;
+  outline-offset: 2px;
+}
+
+

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VanGo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="preloader">
+      <div class="spinner"></div>
+    </div>
+
+    <script>
+      window.addEventListener('load', function() {
+        const preloader = document.getElementById('preloader');
+        preloader.style.display = 'none';
+      });
+    </script>
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #f5b70b;">
+        <a class="navbar-brand" href="index.html"> VanGo  </a>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre" tabindex="0">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#beneficios" tabindex="0">Benefícios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#equipe" tabindex="0">Equipe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato" tabindex="0">Contato</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#faq" tabindex="0">Faq</a>
+              </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5 mb-5"> <!-- Adicionei a classe mb-5 aqui -->
+      <div class="card shadow p-4">
+        <div class="row align-items-center">
+          <!-- Texto à esquerda -->
+          <div class="col-md-6 text-center text-md-left">
+            <h1 class="mb-3">A melhor solução de transporte para você e sua empresa</h1>
+            <p>
+              A VanGo é uma empresa com foco na mobilidade urbana que conecta as pessoas ao transporte coletivo privado através de tecnologia. Como agente de inovação, acredita que a economia compartilhada é uma grande aliada para o desenvolvimento sócio-econômico.
+            </p>
+          </div>
+          
+          <!-- Imagem à direita com botão ajustado -->
+          <div class="col-md-6 text-center">
+            <img src="imagem/1-removebg-preview.png" alt="Imagem Lateral" class="img-fluid mb-2">
+            
+            <!-- Botão "Visite Nosso Site" mais próximo da imagem -->
+            <a href="https://van-go-zeta.vercel.app/" class="btn btn-dark btn-lg btn-over-image mt-2" role="button">
+              Visite Nosso Site
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    <section id="sobre" class="py-5" style="background-color: #f5b70b;">
+      <div class="container">
+        <h2 class="text-center mb-5">Sobre o VanGO</h2>
+        <div class="row text-center">
+    
+          <!-- Card Nossa Missão -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow p-4 h-100">
+              <img src="imagem/missao.jpg" alt="Impacto do VanGO" class="img-fluid mb-3" style=" width: 100%; height: 300px; object-fit: cover;">
+              <h4>🌟 Nossa Missão</h4>
+              <p>Facilitar o acesso ao transporte universitário de forma flexível, segura e sustentável, conectando motoristas e estudantes através da tecnologia.</p>
+            </div>
+          </div>
+    
+          <!-- Card Nossa Visão -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow p-4 h-100">
+              <img src="imagem/visao.jpg" alt="Impacto do VanGO" class="img-fluid mb-3" style=" width: 100%; height: 300px; object-fit: cover;">
+              <h4>🎯 Nossa Visão</h4>
+              <p>Ser a principal plataforma de transporte universitário do país, revolucionando a mobilidade urbana e promovendo a economia compartilhada.</p>
+            </div>
+          </div>
+    
+          <!-- Card Nossos Diferenciais -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow p-4 h-100">
+              <img src="imagem/diferenciais.jpg" alt="Impacto do VanGO" class="img-fluid mb-3" style=" width: 100%; height: 300px; object-fit: cover;">
+              <h4>💡 Nossos Diferenciais</h4>
+              <ul class="list-unstyled">
+                <li><strong>Mobilidade Flexível:</strong> Viagens adaptadas às necessidades dos usuários.</li>
+                <li><strong>Rastreamento em Tempo Real:</strong> Monitore sua van ao vivo.</li>
+                <li><strong>Sistema de Recompensas:</strong> Descontos ao liberar assentos.</li>
+                <li><strong>Segurança Garantida:</strong> Motoristas qualificados e comunicação direta.</li>
+              </ul>
+            </div>
+           </div>
+    
+           <div class="mt-5">
+            <div class="card shadow p-4 text-center">
+              <img src="imagem/sustentavel20.jpg" alt="Impacto do VanGO" class=" img-fluid mb-3" style="height: 300px; object-fit: cover;">
+              <div class="card-body">
+                <h4 class="card-title">🌍 Impacto do VanGO</h4>
+                <p class="card-text lead">
+                  Com o VanGO, buscamos não apenas otimizar o transporte de estudantes, mas também contribuir para um futuro mais sustentável e acessível. Ao integrar motoristas e passageiros de forma eficiente, nosso projeto proporciona uma economia significativa de tempo, redução de custos e melhora na qualidade do serviço. Além disso, promovemos o uso compartilhado de recursos, ajudando a reduzir a emissão de carbono e a congestão nas cidades.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    <section id="beneficios" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Benefícios para Todos</h2>
+            <div class="row text-center">
+                
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow p-4">
+                        
+                        <img src="imagem/passageiro.jpeg" alt="Estudantes" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <h4>🎓 Estudantes</h4>
+                        <ul class="list-unstyled">
+                            <li>🚍 <strong>Mobilidade Simplificada:</strong> Rotas flexíveis e planejadas.</li>
+                            <li>📍 <strong>Rastreamento:</strong> Monitore sua van em tempo real.</li>
+                            <li>🎁 <strong>Recompensas:</strong> Ganhe descontos liberando vagas.</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow p-4">
+                        
+                        <img src="imagem/motorista.jpeg" alt="Motoristas" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <h4>🚐 Motoristas</h4>
+                        <ul class="list-unstyled">
+                            <li>🗺️ <strong>Rotas Otimizadas:</strong> Viagens mais eficientes.</li>
+                            <li>📞 <strong>Comunicação Direta:</strong> Contato fácil com passageiros.</li>
+                            <li>💰 <strong>Lucro Maior:</strong> Maximize a ocupação da van.</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow p-4">
+                        
+                        <img src="imagem/empresa.jpeg" alt="Empresas" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <h4>🏢 Empresas</h4>
+                        <ul class="list-unstyled">
+                            <li>📈 <strong>Maior Visibilidade:</strong> Alcance universitários diretamente.</li>
+                            <li>💼 <strong>Gestão Eficiente:</strong> Controle completo das operações.</li>
+                            <li>🔄 <strong>Redução de Custos:</strong> Rotas otimizadas, menos desperdício.</li>
+                        </ul>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+      </section>      
+      <section id="equipe" class="py-5" style="background-color: #f5b70b;">
+        <div class="container">
+          <h2 class="text-center mb-5">Nossa Equipe</h2>
+          <div class="row">
+            
+            
+            <div class="col-md-4 mb-4">
+              <div class="card text-center shadow">
+                <img src="imagem/Fabio.jpg" alt="Fábio Vieira" class="card-img-top rounded-circle mx-auto mt-4" style="width: 150px; height: 150px;">
+                <div class="card-body">
+                  <h5 class="card-title">Fábio Vieira</h5>
+                  <p class="card-text"><strong>Product Owner | Front-end</strong></p>
+                  <p>Responsável pela visão do produto, priorização do backlog e desenvolvimento front-end.</p>
+                </div>
+              </div>
+            </div>
+      
+            
+            <div class="col-md-4 mb-4">
+              <div class="card text-center shadow">
+                <img src="imagem/Matheus.jpg" alt="Matheus Moreira" class="card-img-top rounded-circle mx-auto mt-4" style="width: 150px; height: 150px;">
+                <div class="card-body">
+                  <h5 class="card-title">Matheus Moreira</h5>
+                  <p class="card-text"><strong>Analista de Viabilidade</strong></p>
+                  <p>Realiza análises de mercado e viabilidade técnica e financeira do projeto.</p>
+                </div>
+              </div>
+            </div>
+      
+            
+            <div class="col-md-4 mb-4">
+              <div class="card text-center shadow">
+                <img src="imagem/Erick.jpeg" alt="Erick Nunes" class="card-img-top rounded-circle mx-auto mt-4" style="width: 150px; height: 150px;">
+                <div class="card-body">
+                  <h5 class="card-title">Erick Nunes</h5>
+                  <p class="card-text"><strong>Desenvolvedor Back-end</strong></p>
+                  <p>Constrói e mantém a lógica do servidor, banco de dados e APIs.</p>
+                </div>
+              </div>
+            </div>
+      
+            
+            <div class="col-md-4 mb-4">
+              <div class="card text-center shadow">
+                <img src="imagem/Liggia.jpg" alt="Liggia Cruz" class="card-img-top rounded-circle mx-auto mt-4" style="width: 150px; height: 150px;">
+                <div class="card-body">
+                  <h5 class="card-title">Liggia Cruz</h5>
+                  <p class="card-text"><strong>Designer UX/UI</strong></p>
+                  <p>Foca na experiência do usuário, criando interfaces intuitivas e visuais atraentes.</p>
+                </div>
+              </div>
+            </div>
+      
+            
+            <div class="col-md-4 mb-4">
+              <div class="card text-center shadow">
+                <img src="imagem/Joao.jpg" alt="João Vinícius" class="card-img-top rounded-circle mx-auto mt-4" style="width: 150px; height: 150px;">
+                <div class="card-body">
+                  <h5 class="card-title">João Vinícius</h5>
+                  <p class="card-text"><strong>Gestor de Viabilidade</strong></p>
+                  <p>Garante a usabilidade e realiza testes para otimizar a experiência do usuário.</p>
+                </div>
+              </div>
+            </div>
+      
+            
+            <div class="col-md-4 mb-4">
+              <div class="card text-center shadow">
+                <img src="imagem/iago.jpg" alt="Iago Dias" class="card-img-top rounded-circle mx-auto mt-4" style="width: 150px; height: 150px;">
+                <div class="card-body">
+                  <h5 class="card-title">Iago Dias</h5>
+                  <p class="card-text"><strong>Scrum Master | Front-end</strong></p>
+                  <p>Facilita a equipe Scrum, remove impedimentos e desenvolve o front-end do projeto.</p>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-5">Entre em Contato</h2>
+          <div class="row">
+            
+           
+            <div class="col-md-6">
+              <form id="contactForm">
+                <!-- Campo Nome -->
+                <div class="mb-3">
+                  <label for="nome" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="nome" placeholder="Digite seu nome completo" required minlength="3">
+                  <!-- Mensagem de erro para nome (inicialmente oculta) -->
+                  <div id="nome-error" class="invalid-feedback" style="display: none;">
+                    O nome deve ter pelo menos 3 caracteres.
+                  </div>
+                </div>
+            
+                <!-- Campo Email -->
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="exemplo@dominio.com" required>
+                  <!-- Mensagem de erro para email (inicialmente oculta) -->
+                  <div id="email-error" class="invalid-feedback" style="display: none;">
+                    Insira um email válido.
+                  </div>
+                </div>
+            
+                <!-- Campo Mensagem -->
+                <div class="mb-3">
+                  <label for="mensagem" class="form-label">Mensagem</label>
+                  <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem aqui" required></textarea>
+                </div>
+            
+                <!-- Botões de Enviar e Limpar -->
+                <div class="d-flex justify-content-between">
+                  <button type="submit" class="btn btn-primary" id="submitBtn">Enviar</button>
+                  <button type="button" class="btn btn-secondary" id="clearBtn">Limpar</button>
+                </div>
+              </form>
+            </div>
+
+
+
+      
+            
+            <div class="col-md-6 text-center">
+              <p><strong>Email:</strong> contato@vango.com</p>
+              <p><strong>Telefone:</strong> (11) 1234-5678</p>
+              <p><strong>Endereço:</strong> Rua Exemplo, 123 - Sorocaba, SP</p>
+              <div class="mt-4">
+                
+                <a href="#" class="mx-2 text-decoration-none"><i class="bi bi-facebook fs-3 text-primary"></i></a>
+                <a href="#" class="mx-2 text-decoration-none"><i class="bi bi-instagram fs-3 text-danger"></i></a>
+                <a href="#" class="mx-2 text-decoration-none"><i class="bi bi-linkedin fs-3 text-info"></i></a>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="py-5" style="background-color: #f5b70b;">
+        <div class="container">
+          <h2 class="text-center mb-5">Perguntas Frequentes (FAQ)</h2>
+          <div class="accordion" id="faqAccordion">
+            
+            <!-- Pergunta 1 -->
+            <div class="card mb-3">
+              <div class="card-header" id="faqHeading1">
+                <h5 class="mb-0">
+                  <button class="btn btn-link text-dark font-weight-bold" type="button" data-toggle="collapse" data-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                    Como faço para cadastrar minha empresa na VanGO?
+                  </button>
+                </h5>
+              </div>
+              <div id="faq1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                <div class="card-body">
+                  Para cadastrar sua empresa, acesse a seção de cadastro no nosso site oficial. Você precisará preencher informações como CNPJ, razão social e dados de contato. Nossa equipe fará a análise e entrará em contato para finalizar o processo.
+                </div>
+              </div>
+            </div>
+      
+            <!-- Pergunta 2 -->
+            <div class="card mb-3">
+              <div class="card-header" id="faqHeading2">
+                <h5 class="mb-0">
+                  <button class="btn btn-link text-dark font-weight-bold collapsed" type="button" data-toggle="collapse" data-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                    Quais documentos são necessários para entrar no aplicativo como motorista?
+                  </button>
+                </h5>
+              </div>
+              <div id="faq2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+                <div class="card-body">
+                  Você precisará enviar documentos como CNH válida, comprovante de residência, certidão de antecedentes criminais e documentação do veículo. Após análise e aprovação, você poderá começar a oferecer serviços na plataforma.
+                </div>
+              </div>
+            </div>
+      
+            <!-- Pergunta 3 -->
+            <div class="card mb-3">
+              <div class="card-header" id="faqHeading3">
+                <h5 class="mb-0">
+                  <button class="btn btn-link text-dark font-weight-bold collapsed" type="button" data-toggle="collapse" data-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                    Como os estudantes podem se inscrever no VanGO?
+                  </button>
+                </h5>
+              </div>
+              <div id="faq3" class="collapse" aria-labelledby="faqHeading3" data-parent="#faqAccordion">
+                <div class="card-body">
+                  Estudantes podem se inscrever através do nosso aplicativo ou site. Basta preencher o cadastro com informações pessoais, como nome, CPF, e e-mail, além de vincular-se à instituição de ensino.
+                </div>
+              </div>
+            </div>
+      
+            <!-- Pergunta 4 -->
+            <div class="card mb-3">
+              <div class="card-header" id="faqHeading4">
+                <h5 class="mb-0">
+                  <button class="btn btn-link text-dark font-weight-bold collapsed" type="button" data-toggle="collapse" data-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                    O serviço de transporte é seguro?
+                  </button>
+                </h5>
+              </div>
+              <div id="faq4" class="collapse" aria-labelledby="faqHeading4" data-parent="#faqAccordion">
+                <div class="card-body">
+                  Sim! Todos os motoristas passam por uma rigorosa verificação de antecedentes e documentação. Além disso, o sistema de rastreamento em tempo real garante mais segurança durante o transporte.
+                </div>
+              </div>
+            </div>
+      
+            <!-- Pergunta 5 -->
+            <div class="card mb-3">
+              <div class="card-header" id="faqHeading5">
+                <h5 class="mb-0">
+                  <button class="btn btn-link text-dark font-weight-bold collapsed" type="button" data-toggle="collapse" data-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                    Como funciona o sistema de recompensas?
+                  </button>
+                </h5>
+              </div>
+              <div id="faq5" class="collapse" aria-labelledby="faqHeading5" data-parent="#faqAccordion">
+                <div class="card-body">
+                  Nosso sistema de recompensas permite que estudantes ganhem descontos ao liberar vagas não utilizadas ou ao participar de promoções especiais. Os pontos acumulados podem ser usados para obter descontos em viagens futuras.
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+      
+
+      <footer class="text-white text-center py-3 bg-gradient" style="background-color: #f5b70b;">
+        <div class="container">
+            <p>&copy; 2024 VanGO. Todos os direitos reservados.</p>
+        </div>
+    </footer>   
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+  const contactForm = document.getElementById('contactForm');
+  const submitBtn = document.getElementById('submitBtn');
+  const clearBtn = document.getElementById('clearBtn');
+
+  // Função para validar o nome
+  function validateName() {
+    const nome = document.getElementById('nome');
+    const nomeError = document.getElementById('nome-error');
+    if (nome.value.length < 3) {
+      nome.classList.add('is-invalid');
+      nomeError.style.display = 'block'; // Mostrar a mensagem de erro
+      return false;
+    } else {
+      nome.classList.remove('is-invalid');
+      nomeError.style.display = 'none'; // Ocultar a mensagem de erro
+      return true;
+    }
+  }
+
+  // Função para validar o email
+  function validateEmail() {
+    const email = document.getElementById('email');
+    const emailError = document.getElementById('email-error');
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!emailPattern.test(email.value)) {
+      email.classList.add('is-invalid');
+      emailError.style.display = 'block'; // Mostrar a mensagem de erro
+      return false;
+    } else {
+      email.classList.remove('is-invalid');
+      emailError.style.display = 'none'; // Ocultar a mensagem de erro
+      return true;
+    }
+  }
+
+  // Função para validar a mensagem
+  function validateMessage() {
+    const mensagem = document.getElementById('mensagem');
+    return mensagem.value.trim() !== ''; // Verifica se a mensagem não está vazia
+  }
+
+  // Função para limpar os erros
+  function clearErrors() {
+    const formFields = contactForm.querySelectorAll('.form-control');
+    formFields.forEach((field) => {
+      field.classList.remove('is-invalid');
+    });
+    document.querySelectorAll('.invalid-feedback').forEach((feedback) => {
+      feedback.style.display = 'none'; // Oculta todas as mensagens de erro
+    });
+  }
+
+  // Função para remover borda vermelha e esconder a mensagem de erro se o campo estiver vazio
+  function removeErrorOnEmptyInput() {
+    const nome = document.getElementById('nome');
+    const nomeError = document.getElementById('nome-error');
+    if (nome.value.trim() === '') {
+      nome.classList.remove('is-invalid');
+      nomeError.style.display = 'none';
+    }
+
+    const email = document.getElementById('email');
+    const emailError = document.getElementById('email-error');
+    if (email.value.trim() === '') {
+      email.classList.remove('is-invalid');
+      emailError.style.display = 'none';
+    }
+
+    const mensagem = document.getElementById('mensagem');
+    if (mensagem.value.trim() === '') {
+      // Não aplica a borda vermelha para o campo de mensagem
+    }
+  }
+
+  // Validar ao submeter o formulário
+  contactForm.addEventListener('submit', function (e) {
+    e.preventDefault(); // Impede o envio real do formulário
+    clearErrors(); // Limpa os erros anteriores
+
+    const isNameValid = validateName();
+    const isEmailValid = validateEmail();
+    const isMessageValid = validateMessage();
+
+    if (isNameValid && isEmailValid && isMessageValid) {
+      // Formulário válido, você pode enviar os dados ou mostrar uma mensagem de sucesso
+      alert('Formulário enviado com sucesso!');
+    }
+  });
+
+  // Validação em tempo real do nome
+  document.getElementById('nome').addEventListener('input', function () {
+    validateName();
+    removeErrorOnEmptyInput(); // Remover erro se o campo estiver vazio
+  });
+
+  // Validação em tempo real do email
+  document.getElementById('email').addEventListener('input', function () {
+    validateEmail();
+    removeErrorOnEmptyInput(); // Remover erro se o campo estiver vazio
+  });
+
+  // Validação em tempo real da mensagem
+  document.getElementById('mensagem').addEventListener('input', function () {
+    removeErrorOnEmptyInput(); // Remover erro se o campo estiver vazio
+  });
+
+  // Limpar formulário
+  clearBtn.addEventListener('click', function () {
+    contactForm.reset();
+    clearErrors();
+  });
+});
+
+</script>
+
+
+<script>
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+      const activeModal = document.querySelector('.modal.show');
+      if (activeModal) {
+        activeModal.classList.remove('show');
+      }
+    }
+  });
+</script>
+
+
+    
+</body>
+</html>
