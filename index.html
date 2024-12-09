@@ -46,24 +46,18 @@
             </ul>
         </div>
     </nav>
-
-    <div class="container mt-5 mb-5"> <!-- Adicionei a classe mb-5 aqui -->
+    <div class="container mt-5 mb-5">
       <div class="card shadow p-4">
         <div class="row align-items-center">
-          <!-- Texto à esquerda -->
           <div class="col-md-6 text-center text-md-left">
             <h1 class="mb-3">A melhor solução de transporte para você e sua empresa</h1>
             <p>
               A VanGo é uma empresa com foco na mobilidade urbana que conecta as pessoas ao transporte coletivo privado através de tecnologia. Como agente de inovação, acredita que a economia compartilhada é uma grande aliada para o desenvolvimento sócio-econômico.
             </p>
-          </div>
-          
-          <!-- Imagem à direita com botão ajustado -->
+          </div>          
           <div class="col-md-6 text-center">
             <img src="imagem/1-removebg-preview.png" alt="Imagem Lateral" class="img-fluid mb-2">
-            
-            <!-- Botão "Visite Nosso Site" mais próximo da imagem -->
-            <a href="https://van-go-zeta.vercel.app/" class="btn btn-dark btn-lg btn-over-image mt-2" role="button">
+            <a href="https://van-go-zeta.vercel.app/cadastro" class="btn btn-dark btn-lg btn-over-image mt-2" role="button">
               Visite Nosso Site
             </a>
           </div>
@@ -77,8 +71,6 @@
       <div class="container">
         <h2 class="text-center mb-5">Sobre o VanGO</h2>
         <div class="row text-center">
-    
-          <!-- Card Nossa Missão -->
           <div class="col-md-4 mb-4">
             <div class="card shadow p-4 h-100">
               <img src="imagem/missao.jpg" alt="Impacto do VanGO" class="img-fluid mb-3" style=" width: 100%; height: 300px; object-fit: cover;">
@@ -86,8 +78,7 @@
               <p>Facilitar o acesso ao transporte universitário de forma flexível, segura e sustentável, conectando motoristas e estudantes através da tecnologia.</p>
             </div>
           </div>
-    
-          <!-- Card Nossa Visão -->
+
           <div class="col-md-4 mb-4">
             <div class="card shadow p-4 h-100">
               <img src="imagem/visao.jpg" alt="Impacto do VanGO" class="img-fluid mb-3" style=" width: 100%; height: 300px; object-fit: cover;">
@@ -95,8 +86,6 @@
               <p>Ser a principal plataforma de transporte universitário do país, revolucionando a mobilidade urbana e promovendo a economia compartilhada.</p>
             </div>
           </div>
-    
-          <!-- Card Nossos Diferenciais -->
           <div class="col-md-4 mb-4">
             <div class="card shadow p-4 h-100">
               <img src="imagem/diferenciais.jpg" alt="Impacto do VanGO" class="img-fluid mb-3" style=" width: 100%; height: 300px; object-fit: cover;">
@@ -321,8 +310,7 @@
         <div class="container">
           <h2 class="text-center mb-5">Perguntas Frequentes (FAQ)</h2>
           <div class="accordion" id="faqAccordion">
-            
-            <!-- Pergunta 1 -->
+
             <div class="card mb-3">
               <div class="card-header" id="faqHeading1">
                 <h5 class="mb-0">
@@ -338,7 +326,6 @@
               </div>
             </div>
       
-            <!-- Pergunta 2 -->
             <div class="card mb-3">
               <div class="card-header" id="faqHeading2">
                 <h5 class="mb-0">
@@ -354,7 +341,6 @@
               </div>
             </div>
       
-            <!-- Pergunta 3 -->
             <div class="card mb-3">
               <div class="card-header" id="faqHeading3">
                 <h5 class="mb-0">
@@ -370,7 +356,6 @@
               </div>
             </div>
       
-            <!-- Pergunta 4 -->
             <div class="card mb-3">
               <div class="card-header" id="faqHeading4">
                 <h5 class="mb-0">
@@ -385,8 +370,7 @@
                 </div>
               </div>
             </div>
-      
-            <!-- Pergunta 5 -->
+  
             <div class="card mb-3">
               <div class="card-header" id="faqHeading5">
                 <h5 class="mb-0">
@@ -425,55 +409,53 @@
   const submitBtn = document.getElementById('submitBtn');
   const clearBtn = document.getElementById('clearBtn');
 
-  // Função para validar o nome
+
   function validateName() {
     const nome = document.getElementById('nome');
     const nomeError = document.getElementById('nome-error');
     if (nome.value.length < 3) {
       nome.classList.add('is-invalid');
-      nomeError.style.display = 'block'; // Mostrar a mensagem de erro
+      nomeError.style.display = 'block'; 
       return false;
     } else {
       nome.classList.remove('is-invalid');
-      nomeError.style.display = 'none'; // Ocultar a mensagem de erro
+      nomeError.style.display = 'none';
       return true;
     }
   }
 
-  // Função para validar o email
   function validateEmail() {
     const email = document.getElementById('email');
     const emailError = document.getElementById('email-error');
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (!emailPattern.test(email.value)) {
       email.classList.add('is-invalid');
-      emailError.style.display = 'block'; // Mostrar a mensagem de erro
+      emailError.style.display = 'block';
       return false;
     } else {
       email.classList.remove('is-invalid');
-      emailError.style.display = 'none'; // Ocultar a mensagem de erro
+      emailError.style.display = 'none'; 
       return true;
     }
   }
 
-  // Função para validar a mensagem
   function validateMessage() {
     const mensagem = document.getElementById('mensagem');
-    return mensagem.value.trim() !== ''; // Verifica se a mensagem não está vazia
+    return mensagem.value.trim() !== ''; 
   }
 
-  // Função para limpar os erros
+  
   function clearErrors() {
     const formFields = contactForm.querySelectorAll('.form-control');
     formFields.forEach((field) => {
       field.classList.remove('is-invalid');
     });
     document.querySelectorAll('.invalid-feedback').forEach((feedback) => {
-      feedback.style.display = 'none'; // Oculta todas as mensagens de erro
+      feedback.style.display = 'none';
     });
   }
 
-  // Função para remover borda vermelha e esconder a mensagem de erro se o campo estiver vazio
+  
   function removeErrorOnEmptyInput() {
     const nome = document.getElementById('nome');
     const nomeError = document.getElementById('nome-error');
@@ -491,43 +473,37 @@
 
     const mensagem = document.getElementById('mensagem');
     if (mensagem.value.trim() === '') {
-      // Não aplica a borda vermelha para o campo de mensagem
+      
     }
   }
 
-  // Validar ao submeter o formulário
   contactForm.addEventListener('submit', function (e) {
-    e.preventDefault(); // Impede o envio real do formulário
-    clearErrors(); // Limpa os erros anteriores
+    e.preventDefault(); 
+    clearErrors(); 
 
     const isNameValid = validateName();
     const isEmailValid = validateEmail();
     const isMessageValid = validateMessage();
 
     if (isNameValid && isEmailValid && isMessageValid) {
-      // Formulário válido, você pode enviar os dados ou mostrar uma mensagem de sucesso
       alert('Formulário enviado com sucesso!');
     }
   });
 
-  // Validação em tempo real do nome
   document.getElementById('nome').addEventListener('input', function () {
     validateName();
-    removeErrorOnEmptyInput(); // Remover erro se o campo estiver vazio
+    removeErrorOnEmptyInput();
   });
 
-  // Validação em tempo real do email
   document.getElementById('email').addEventListener('input', function () {
     validateEmail();
-    removeErrorOnEmptyInput(); // Remover erro se o campo estiver vazio
+    removeErrorOnEmptyInput();
   });
 
-  // Validação em tempo real da mensagem
   document.getElementById('mensagem').addEventListener('input', function () {
-    removeErrorOnEmptyInput(); // Remover erro se o campo estiver vazio
+    removeErrorOnEmptyInput(); 
   });
 
-  // Limpar formulário
   clearBtn.addEventListener('click', function () {
     contactForm.reset();
     clearErrors();
